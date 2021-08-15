@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace naturGuiderna.Models
 {
-    public class Activity
+    public class NatureActivity
     {
         [Key]
         public int Id { get; set; }
@@ -21,7 +21,11 @@ namespace naturGuiderna.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
+        public int NumberOfParticipants { get; set; }
+        public bool Availability { get; set; }
+
         public ActivityCategory ActivityCategory { get; set; }
+
 
         // Navigation properties (Relationsship between models)
         // Joint table Experience_Activity between Activity And Experience
@@ -39,6 +43,10 @@ namespace naturGuiderna.Models
         public Guide Guide { get; set; }
 
 
+        // Category one-to-many
+        [ForeignKey("CategoryId")]
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
 
 
     }

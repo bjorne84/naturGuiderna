@@ -16,7 +16,7 @@ namespace naturGuiderna.Models
         public int GuideDescription { get; set; }
 
         // Navigation properties (Relationsship between models)
-        public List<Activity> Activities { get; set; }
+        public List<NatureActivity> Activities { get; set; }
 
     }
 }

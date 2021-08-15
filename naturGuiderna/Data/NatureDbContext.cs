@@ -30,8 +30,9 @@ namespace naturGuiderna.Data
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Experience> Experiences { get; set; }
-        public DbSet<Activity> Activities { get; set; }
+        public DbSet<NatureActivity> Activities { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Guide> Guides { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
