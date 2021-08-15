@@ -13,5 +13,9 @@ namespace naturGuiderna.Models
         public string PictureUrl { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+
+        // Navigation properties (Relationsship between models)
+        // Joint table Experience_Activity between Activity And Experience
+        public List<Experience_Activity> Experience_Activities { get; set; }
     }
 }
