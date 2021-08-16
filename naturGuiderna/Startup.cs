@@ -57,6 +57,9 @@ namespace naturGuiderna
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            // Feed the database with data if nothing exist on it
+            DbInitializer.Seed(app);
         }
     }
 }
