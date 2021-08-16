@@ -34,5 +34,6 @@ namespace naturGuiderna.Data
         public DbSet<Location> Locations { get; set; }
         public DbSet<Guide> Guides { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Experience_Activity> Experience_Activities { get; set; }
     }
 }

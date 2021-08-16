@@ -13,7 +13,7 @@ namespace naturGuiderna.Models
         public string ProfilePictureUrl { get; set; }
         public string FullName { get; set; }
         public int Age { get; set; }
-        public int GuideDescription { get; set; }
+        public string GuideDescription { get; set; }
 
         // Navigation properties (Relationsship between models)
         public List<NatureActivity> Activities { get; set; }
