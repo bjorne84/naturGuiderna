@@ -19,7 +19,7 @@ namespace naturGuiderna.Controllers
         public IActionResult Index()
         {
             var data = _context.Experiences.ToList();
-            return View();
+            return View(data);
         }
     }
 }
