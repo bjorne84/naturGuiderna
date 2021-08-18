@@ -10,9 +10,13 @@ namespace naturGuiderna.Models
     {
         [Key]
         public int Id { get; set; }
+        [Display(Name = "Profilbild")]
         public string ProfilePictureUrl { get; set; }
+        [Display(Name = "Namn")]
         public string FullName { get; set; }
+        [Display(Name = "Ålder")]
         public int Age { get; set; }
+        [Display(Name = "Presentation")]
         public string GuideDescription { get; set; }
 
         // Navigation properties (Relationsship between models)

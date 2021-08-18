@@ -1,0 +1,46 @@
+﻿@model IEnumerable<naturGuiderna.Models.Guide>
+
+@{
+    ViewData["Title"] = "Guider";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>@Html.DisplayNameFor(model => model.ProfilePictureUrl)</th>
+                    <th>@Html.DisplayNameFor(model => model.FullName)</th>
+                    <th>@Html.DisplayNameFor(model => model.Age)</th>
+                    <th>@Html.DisplayNameFor(model => model.GuideDescription)</th>
+                    <th>Ändra data</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td class="align-middle">
+                        <img class="rounded-top" src="@item.ProfilePictureUrl" alt="@item.FullName" style="max-width: 200px" />
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.Age)
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.GuideDescription)
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-primary"><i class="badge-info bi-pencil-square">Redigera</i></a> |
+                        <a class="btn btn-outline-info"><i class="bi bi-eye">Se info</i></a> |
+                        <a class="btn btn-danger text-white"><i class="bi bi-trash">Radera</i></a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
