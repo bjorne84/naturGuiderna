@@ -17,8 +17,8 @@ namespace naturGuiderna.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var allGuides = await _context.Locations.ToListAsync();
-            return View();
+            var allLocations = await _context.Locations.ToListAsync();
+            return View(allLocations);
         }
     }
 }

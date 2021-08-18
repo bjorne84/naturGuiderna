@@ -13,15 +13,21 @@ namespace naturGuiderna.Models
         [Key]
         public int Id { get; set; }
 
+        [Display(Name = "Bild")]
         public string PictureUrl { get; set; }
+        [Display(Name = "Aktivitet")]
         public string Name { get; set; }
+        [Display(Name = "Beskrivning")]
         public string Description { get; set; }
-
+        [Display(Name = "Pris")]
         public double Price { get; set; }
+        [Display(Name = "Starttid")]
         public DateTime StartDate { get; set; }
+        [Display(Name = "Sluttid")]
         public DateTime EndDate { get; set; }
-
+        [Display(Name = "Antal deltagare")]
         public int NumberOfParticipants { get; set; }
+        [Display(Name = "Tillgänglig")]
         public bool Availability { get; set; }
 
         public ActivityCategory ActivityCategory { get; set; }
