@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Experience>
+﻿@model IEnumerable<naturGuiderna.Models.Experience>
 
 @{
     ViewData["Title"] = "Upplevelser";
@@ -20,7 +20,7 @@
                 {
                     <tr>
                         <td class="align-middle">
-                            <img class="rounded-top" src="@item.PictureUrl" alt="@item.Name" style="max-width: 200px"/>
+                            <img class="rounded-top" src="@item.PictureUrl" alt="@item.Name" style="max-width: 200px" />
                         </td>
                         <td class="align-middle">
                             @Html.DisplayFor(modelItem => item.Name)
@@ -36,7 +36,7 @@
                     </tr>
                 }
             </tbody>
-           
+
         </table>
     </div>
 </div>
