@@ -31,7 +31,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ProfilePictureUrl)
+                <img class="rounded-top" src="@item.ProfilePictureUrl" alt="@item.FullName" style="max-width: 200px" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)

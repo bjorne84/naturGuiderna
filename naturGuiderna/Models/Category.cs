@@ -10,7 +10,9 @@ namespace naturGuiderna.Models
     {
         [Key]
         public int Id { get; set; }
+        [Display(Name = "Bild")]
         public string PictureUrl { get; set; }
+        [Display(Name = "Namn")]
         public string Name { get; set; }
 
         // Navigation properties (Relationsship between models)
