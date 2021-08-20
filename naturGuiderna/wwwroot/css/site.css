@@ -73,7 +73,7 @@ body {
 
 /* My own CSS*/
 h2 {
-    color: red;
+    font-weight:700;
 }
 p {
 
@@ -110,9 +110,10 @@ p {
     transition: 0.3s;
 }
 
-.myArticle img {
-    max-height: 300px;
-}
+    .myArticle img {
+        max-height: 300px;
+        width: 100%;
+    }
 
 /* Experinces*/
 .expWrapper {
@@ -132,13 +133,21 @@ p {
 /* footer Article Wrapper*/
 .footerArticleWrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-    .footerArticleWrapper button {
-        width: 40%;
-    }
+.guideImgWrapper {
+    display: flex;
+    justify-content:center;
+    max-width:50%;
+}
+.guideImgWrapper img {
+    border-radius: 50%;
+}
+.footerArticleWrapper button {
+    width: 40%;
+}
 
     .guideImgWrapper {
     }

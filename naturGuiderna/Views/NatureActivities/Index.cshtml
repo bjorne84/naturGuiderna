@@ -74,8 +74,8 @@
                 </table>
                 <div class="footerArticleWrapper">
                     <div class="guideImgWrapper">
-                        <img class="rounded-circle maxHeight40" src="@Html.DisplayFor(modelItem => item.Guide.ProfilePictureUrl)" alt="Guide: @Html.DisplayFor(modelItem => item.Guide.FullName)" />
-                        <p>@Html.DisplayNameFor(model => model.Guide): @Html.DisplayFor(modelItem => item.Guide.FullName)</p>
+                        <img class="maxHeight40" src="@Html.DisplayFor(modelItem => item.Guide.ProfilePictureUrl)" alt="Guide: @Html.DisplayFor(modelItem => item.Guide.FullName)" />
+                        <p><span class="font-weight-bold">@Html.DisplayNameFor(model => model.Guide):</span> @Html.DisplayFor(modelItem => item.Guide.FullName)</p>
                     </div>
                     <button class="btn btn-primary"><i class="fas fa-shopping-cart mr-1"></i>Köp</button>
                 </div>
