@@ -88,10 +88,10 @@ p {
     margin: 0 auto;
 }
 .articleWrapper {
-   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .myArticle {
@@ -115,6 +115,14 @@ p {
         width: 100%;
     }
 
+.descP {
+    min-height: 120px;
+    max-height: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+}
 /* Experinces*/
 .expWrapper {
     display: flex;
@@ -135,19 +143,45 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: auto;
+    padding-bottom: 1em;
 }
 
 .guideImgWrapper {
     display: flex;
-    justify-content:center;
-    max-width:50%;
+    flex-direction:column;
+    justify-content: center;
+    max-width: 50%;
+    text-align: center;
 }
 .guideImgWrapper img {
     border-radius: 50%;
 }
-.footerArticleWrapper button {
+.btnWrapper {
+    display: flex;
+    flex-direction: column;
     width: 40%;
+    margin-top: auto;
+}
+}
+
+.buy-btn {
+    margin-top: auto;
+
+}
+.footerArticleWrapper button {
+
 }
 
     .guideImgWrapper {
     }
+
+.myBtn {
+    border-radius: 0.2em;
+    border:none;
+    padding: 0.4em 0.6em;
+}
+
+.editWrapperLink {
+    display: flex;
+}

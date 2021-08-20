@@ -30,8 +30,9 @@ namespace naturGuiderna.Models
         [Display(Name = "Tillgänglighet")]
         public bool Availability { get; set; }
 
+        /*
         public ActivityCategory ActivityCategory { get; set; }
-
+        */
 
         // Navigation properties (Relationsship between models)
         // Joint table Experience_Activity between Activity And Experience

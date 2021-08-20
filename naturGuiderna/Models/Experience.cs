@@ -10,7 +10,7 @@ namespace naturGuiderna.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name = "Bild")]
+        [Display(Name = "Bild url")]
         public string PictureUrl { get; set; }
         [Display(Name = "Upplevelse")]
         public string Name { get; set; }

@@ -54,44 +54,54 @@ namespace naturGuiderna.Data
                     {
                         new Experience()
                         {
+                            PictureUrl = "https://www.forskning.se/wp-content/uploads/2020/08/urskogenskog.jpg",
                             Name = "Urskog"
                         },
                         new Experience()
                         {
+                            PictureUrl = "https://images.unsplash.com/photo-1562922429-aed5739e0f1c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1380&q=80",
                             Name = "Risk att bli blöt"
                         },
                          new Experience()
                         {
+                            PictureUrl = "https://images.unsplash.com/photo-1582002834723-2256d33da100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80",
                             Name = "Stor chans att se vilt"
                         },
                          new Experience()
                         {
+                            PictureUrl = "https://res.cloudinary.com/coopsverige/image/upload/126556.jpg",
                             Name = "Lunch ingår"
                         },
                          new Experience()
                         {
+                            PictureUrl = "https://imengine.lrf.infomaker.io/?uuid=12c6dfad-e56d-4564-8634-a4e17acbd928&type=preview&source=&function=fit&width=630&height=434&q=80&maxsize=630&name=eld-tt-jpg",
                             Name = "Grilla"
                         },
                          new Experience()
                         {
+                            PictureUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sylarna.JPG/1200px-Sylarna.JPG",
                             Name = "Högfjällsmiljö"
                         },
                          new Experience()
                         {
+                            PictureUrl = "https://imengine2.lrf.infomaker.io/?uuid=6e0d8238-c883-4262-8093-894f08fcbc16&type=preview&source=&function=cropresize&width=630&height=434&q=80&x=6&y=0&crop_w=1794&crop_h=1197&z=1.9955654101995566&name=skot-din-skog-klimatsmart-jpg",
                             Name = "Skog"
                         },
                          new Experience()
                         {
+                            PictureUrl = "https://img5.cliparto.com/pic/xl/260611/5128290-measuring-scale-icon-easy-normal-hard-expert.jpg",
                             Name = "Lätt utmaning"
                         }
                          ,
                          new Experience()
                         {
-                            Name = "Medelsvår utmaning"
+                             PictureUrl = "https://img5.cliparto.com/pic/xl/260611/5128296-measuring-scale-icon-arrow-on-an-normal.jpg",
+                             Name = "Medelsvår utmaning"
                         },
                          new Experience()
                         {
-                            Name = "Tuff Utmaning"
+                             PictureUrl = "https://img5.cliparto.com/pic/xl/260611/5128298-measuring-scale-icon-arrow-on-an-hard.jpg",
+                             Name = "Tuff Utmaning"
                         }
                     });
                     context.SaveChanges();
@@ -181,7 +191,7 @@ namespace naturGuiderna.Data
                             },
                             new NatureActivity()
                             {
-                                PictureUrl = "https://live.staticflickr.com/351/19022134910_b8e9eebea3_b.jpg",
+                                PictureUrl = "https://h24-original.s3.amazonaws.com/258766/25498858-Dlc6H.jpg",
                                 Name = "Kajak på Ottsjön",
                                 Description = "En sagolik paddlingstur väntar med både fina sandstränder, fantastisk omgivning, mysiga små åkrokar vi kan paddla in på.",
                                 Price = 1599,
